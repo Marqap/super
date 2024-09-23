@@ -3,44 +3,6 @@ namespace myImages {
 
     helpers._registerFactory("image", function(name: string) {
         switch(helpers.stringTrim(name)) {
-            case "image2":
-            case "HSbackground":return img`
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
-`;
-            case "image4":
-            case "myImage":return img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`;
             case "image1":
             case "BootSplash":return img`
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
@@ -429,6 +391,44 @@ ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
 `;
+            case "image2":
+            case "HSbackground":return img`
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+`;
+            case "image4":
+            case "TransparentImg":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
         }
         return null;
     })
@@ -551,6 +551,8 @@ f f f f f f f f f f f f f f f f
             case "recovery":return hex`005e010408020105001c000f0a006400f4010a00000400000000000000000000000000000000021e0000000400012404000800012408000c0001200c0010000120100014000120`;
             case "song1":
             case "Ssound":return hex`0078000408020300001c00010a006400f401640000040000000000000000000000000005000004060000000400012a02001c000c960064006d019001000478002c010000640032000000000a000005240000000400011904000800011d08000c0001200c001000012410001400012714001800012a03001c0001dc00690000045e0100040000000000000000000005000001000003240004000800011908000c00011d0c001000012010001400012414001800012718001c00012a`;
+            case "song4":
+            case "mySong":return hex`0050000408020100001c00010a006400f4016400000400000000000000000000000000050000043f00000004000320222508000c00031e202210001400011e14001800021e2218001c00021b1e1c002000021e2020002400021d1e24002800021e2028002c00011b`;
         }
         return null;
     })
